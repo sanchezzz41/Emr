@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emr.Web", "Emr.Web\Emr.Web.csproj", "{26E6FA3C-4B51-45FE-AFA4-FD69073AC013}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emr.Web", "Emr.Web\Emr.Web.csproj", "{26E6FA3C-4B51-45FE-AFA4-FD69073AC013}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emr.Database", "Emr.Database\Emr.Database.csproj", "{D36AEBC0-46C5-411C-BA2D-57F60767F42F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emr.Database", "Emr.Database\Emr.Database.csproj", "{D36AEBC0-46C5-411C-BA2D-57F60767F42F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emr.Domain", "Emr.Domain\Emr.Domain.csproj", "{ED24B231-3631-4DD0-8483-DE9BB9054E20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emr.Identity", "Emr.Identity\Emr.Identity.csproj", "{E3E70135-B0A5-46FC-974D-5AE476DE6512}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{D36AEBC0-46C5-411C-BA2D-57F60767F42F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D36AEBC0-46C5-411C-BA2D-57F60767F42F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D36AEBC0-46C5-411C-BA2D-57F60767F42F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED24B231-3631-4DD0-8483-DE9BB9054E20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED24B231-3631-4DD0-8483-DE9BB9054E20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED24B231-3631-4DD0-8483-DE9BB9054E20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED24B231-3631-4DD0-8483-DE9BB9054E20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3E70135-B0A5-46FC-974D-5AE476DE6512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3E70135-B0A5-46FC-974D-5AE476DE6512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3E70135-B0A5-46FC-974D-5AE476DE6512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3E70135-B0A5-46FC-974D-5AE476DE6512}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

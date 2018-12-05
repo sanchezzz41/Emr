@@ -19,11 +19,11 @@
     "Emr.Web": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/values",
+      "launchUrl": "help",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:59689/"
+      "applicationUrl": "http://localhost:5005/"
     }
   }
 }

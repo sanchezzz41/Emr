@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 
 namespace Emr.Database.Models
 {
@@ -15,5 +13,10 @@ namespace Emr.Database.Models
         public string Name { get; set; }
 
         public virtual ICollection<User> Users { get; set; }
+
+        public Role()
+        {
+            
+        }
     }
 }

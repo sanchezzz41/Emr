@@ -26,5 +26,10 @@ namespace Emr.Database.Models
         public DateTime BirthDay { get; set; }
 
         public virtual Role Role { get; set; }
+
+        public User()
+        {
+            UserGuid=Guid.NewGuid();
+        }
     }
 }

@@ -19,6 +19,7 @@ namespace Emr.Web
         {
             BuildWebHost(args)
                 .UpdateDatabase<DatabaseContext>()
+                .SetUp<InitializerDb>(x=>x.CreateRoles())
                 .Run();
         }
 
@@ -39,8 +40,14 @@ namespace Emr.Web
         public static IWebHost UpdateDatabase<T>(this IWebHost host) where T : DbContext
         {
             var db = host.Services.CreateScope().ServiceProvider.GetService<T>();
-            if (db != null)
-                db.Database.Migrate();
+            db?.Database.Migrate();
+            return host;
+        }
+
+        public static IWebHost SetUp<T>(this IWebHost host, Action<T> action) where T:class
+        {
+            var service = host.Services.CreateScope().ServiceProvider.GetRequiredService<T>();
+            action(service);
             return host;
         }
     }
